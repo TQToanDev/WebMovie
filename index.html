@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Mulan Movie</title>
+</head>
+<body>
+    <img class="bg" src="./img/bg.jpg" alt="">
+    <header>
+        <a href="#" class="logo"><img src="./img/logo.png" alt="logo"></a>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Show</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+
+        <div class="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+    <main>
+        <div class="banel">
+            <div class="container">
+                <img src="./img/name.png" alt="name Movie">
+                <ul>
+                    <li>2020</li>
+                    <li><span style="background-color: red; padding: 0 8px; border-radius: 5px;">12+</span></li>
+                    <li>1h 55 min</li>
+                    <li>Action</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nobis fugit quidem iusto id, consequatur facilis, 
+                    quasi eveniet adipisci voluptatem dolorum inventore suscipit sit eligendi quaerat maxime ratione totam magnam! 
+                    Possimus?
+                </p>
+                <div class="btn">
+                    <a href="#"> <i class="fa-sharp fa-solid fa-circle-play"></i> play</a>
+                    <a href="#"> <i class="fa-solid fa-plus"></i> my list</a>
+                </div>
+                
+                <a href="#" onclick="handleBtnClose()" class="play"><img src="./img/play.png" alt="play_btn">watch trailer</a>
+            </div>
+            <div class="trailer">
+                <video src="./Video/Disney's Mulan - Official Trailer.mp4" controls="true"></video>
+                <img class="close" src="./img/close.png" onclick="handleBtnClose()" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./index.js"></script>
+</html>
